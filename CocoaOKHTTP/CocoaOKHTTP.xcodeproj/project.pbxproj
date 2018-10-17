@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E637A31621776C680053FC8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A31521776C680053FC8B /* AppDelegate.m */; };
+		E637A31921776C680053FC8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A31821776C680053FC8B /* ViewController.m */; };
+		E637A31C21776C680053FC8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E637A31A21776C680053FC8B /* Main.storyboard */; };
+		E637A31E21776C690053FC8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E637A31D21776C690053FC8B /* Assets.xcassets */; };
+		E637A32121776C690053FC8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E637A31F21776C690053FC8B /* LaunchScreen.storyboard */; };
+		E637A32421776C690053FC8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A32321776C690053FC8B /* main.m */; };
+		E637A32E21776C690053FC8B /* CocoaOKHTTPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A32D21776C690053FC8B /* CocoaOKHTTPTests.m */; };
+		E637A33921776C690053FC8B /* CocoaOKHTTPUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A33821776C690053FC8B /* CocoaOKHTTPUITests.m */; };
+		E637A34921776CF30053FC8B /* OKHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A34821776CF30053FC8B /* OKHTTPClient.m */; };
+		E637A34C21776D090053FC8B /* OKHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A34B21776D090053FC8B /* OKHTTPRequest.m */; };
+		E637A34F21776D190053FC8B /* OKHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A34E21776D190053FC8B /* OKHTTPResponse.m */; };
+		E637A35221776D280053FC8B /* OKHTTPCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A35121776D280053FC8B /* OKHTTPCallback.m */; };
+		E637A35521776D390053FC8B /* OKHTTPCall.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A35421776D390053FC8B /* OKHTTPCall.m */; };
+		E637A35821776D4D0053FC8B /* OKHTTPDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A35721776D4D0053FC8B /* OKHTTPDispatcher.m */; };
+		E637A35B21776D630053FC8B /* OKHTTPInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = E637A35A21776D630053FC8B /* OKHTTPInterceptor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E637A32A21776C690053FC8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E637A30921776C680053FC8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E637A31021776C680053FC8B;
+			remoteInfo = CocoaOKHTTP;
+		};
+		E637A33521776C690053FC8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E637A30921776C680053FC8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E637A31021776C680053FC8B;
+			remoteInfo = CocoaOKHTTP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E637A31121776C680053FC8B /* CocoaOKHTTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaOKHTTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E637A31421776C680053FC8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E637A31521776C680053FC8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E637A31721776C680053FC8B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E637A31821776C680053FC8B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E637A31B21776C680053FC8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E637A31D21776C690053FC8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E637A32021776C690053FC8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E637A32221776C690053FC8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E637A32321776C690053FC8B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E637A32921776C690053FC8B /* CocoaOKHTTPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaOKHTTPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E637A32D21776C690053FC8B /* CocoaOKHTTPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaOKHTTPTests.m; sourceTree = "<group>"; };
+		E637A32F21776C690053FC8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E637A33421776C690053FC8B /* CocoaOKHTTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaOKHTTPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E637A33821776C690053FC8B /* CocoaOKHTTPUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaOKHTTPUITests.m; sourceTree = "<group>"; };
+		E637A33A21776C690053FC8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E637A34721776CF30053FC8B /* OKHTTPClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKHTTPClient.h; sourceTree = "<group>"; };
+		E637A34821776CF30053FC8B /* OKHTTPClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKHTTPClient.m; sourceTree = "<group>"; };
+		E637A34A21776D090053FC8B /* OKHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKHTTPRequest.h; sourceTree = "<group>"; };
+		E637A34B21776D090053FC8B /* OKHTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKHTTPRequest.m; sourceTree = "<group>"; };
+		E637A34D21776D190053FC8B /* OKHTTPResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKHTTPResponse.h; sourceTree = "<group>"; };
+		E637A34E21776D190053FC8B /* OKHTTPResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKHTTPResponse.m; sourceTree = "<group>"; };
+		E637A35021776D280053FC8B /* OKHTTPCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKHTTPCallback.h; sourceTree = "<group>"; };
+		E637A35121776D280053FC8B /* OKHTTPCallback.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKHTTPCallback.m; sourceTree = "<group>"; };
+		E637A35321776D390053FC8B /* OKHTTPCall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKHTTPCall.h; sourceTree = "<group>"; };
+		E637A35421776D390053FC8B /* OKHTTPCall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKHTTPCall.m; sourceTree = "<group>"; };
+		E637A35621776D4D0053FC8B /* OKHTTPDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKHTTPDispatcher.h; sourceTree = "<group>"; };
+		E637A35721776D4D0053FC8B /* OKHTTPDispatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKHTTPDispatcher.m; sourceTree = "<group>"; };
+		E637A35921776D630053FC8B /* OKHTTPInterceptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OKHTTPInterceptor.h; sourceTree = "<group>"; };
+		E637A35A21776D630053FC8B /* OKHTTPInterceptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKHTTPInterceptor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E637A30E21776C680053FC8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E637A32621776C690053FC8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E637A33121776C690053FC8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E637A30821776C680053FC8B = {
+			isa = PBXGroup;
+			children = (
+				E637A31321776C680053FC8B /* CocoaOKHTTP */,
+				E637A32C21776C690053FC8B /* CocoaOKHTTPTests */,
+				E637A33721776C690053FC8B /* CocoaOKHTTPUITests */,
+				E637A31221776C680053FC8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E637A31221776C680053FC8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E637A31121776C680053FC8B /* CocoaOKHTTP.app */,
+				E637A32921776C690053FC8B /* CocoaOKHTTPTests.xctest */,
+				E637A33421776C690053FC8B /* CocoaOKHTTPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E637A31321776C680053FC8B /* CocoaOKHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				E637A34621776CA10053FC8B /* CocoaOKHTTP */,
+				E637A31421776C680053FC8B /* AppDelegate.h */,
+				E637A31521776C680053FC8B /* AppDelegate.m */,
+				E637A31721776C680053FC8B /* ViewController.h */,
+				E637A31821776C680053FC8B /* ViewController.m */,
+				E637A31A21776C680053FC8B /* Main.storyboard */,
+				E637A31D21776C690053FC8B /* Assets.xcassets */,
+				E637A31F21776C690053FC8B /* LaunchScreen.storyboard */,
+				E637A32221776C690053FC8B /* Info.plist */,
+				E637A32321776C690053FC8B /* main.m */,
+			);
+			path = CocoaOKHTTP;
+			sourceTree = "<group>";
+		};
+		E637A32C21776C690053FC8B /* CocoaOKHTTPTests */ = {
+			isa = PBXGroup;
+			children = (
+				E637A32D21776C690053FC8B /* CocoaOKHTTPTests.m */,
+				E637A32F21776C690053FC8B /* Info.plist */,
+			);
+			path = CocoaOKHTTPTests;
+			sourceTree = "<group>";
+		};
+		E637A33721776C690053FC8B /* CocoaOKHTTPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E637A33821776C690053FC8B /* CocoaOKHTTPUITests.m */,
+				E637A33A21776C690053FC8B /* Info.plist */,
+			);
+			path = CocoaOKHTTPUITests;
+			sourceTree = "<group>";
+		};
+		E637A34621776CA10053FC8B /* CocoaOKHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				E637A34721776CF30053FC8B /* OKHTTPClient.h */,
+				E637A34821776CF30053FC8B /* OKHTTPClient.m */,
+				E637A34A21776D090053FC8B /* OKHTTPRequest.h */,
+				E637A34B21776D090053FC8B /* OKHTTPRequest.m */,
+				E637A34D21776D190053FC8B /* OKHTTPResponse.h */,
+				E637A34E21776D190053FC8B /* OKHTTPResponse.m */,
+				E637A35021776D280053FC8B /* OKHTTPCallback.h */,
+				E637A35121776D280053FC8B /* OKHTTPCallback.m */,
+				E637A35321776D390053FC8B /* OKHTTPCall.h */,
+				E637A35421776D390053FC8B /* OKHTTPCall.m */,
+				E637A35621776D4D0053FC8B /* OKHTTPDispatcher.h */,
+				E637A35721776D4D0053FC8B /* OKHTTPDispatcher.m */,
+				E637A35921776D630053FC8B /* OKHTTPInterceptor.h */,
+				E637A35A21776D630053FC8B /* OKHTTPInterceptor.m */,
+			);
+			path = CocoaOKHTTP;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E637A31021776C680053FC8B /* CocoaOKHTTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E637A33D21776C690053FC8B /* Build configuration list for PBXNativeTarget "CocoaOKHTTP" */;
+			buildPhases = (
+				E637A30D21776C680053FC8B /* Sources */,
+				E637A30E21776C680053FC8B /* Frameworks */,
+				E637A30F21776C680053FC8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaOKHTTP;
+			productName = CocoaOKHTTP;
+			productReference = E637A31121776C680053FC8B /* CocoaOKHTTP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E637A32821776C690053FC8B /* CocoaOKHTTPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E637A34021776C690053FC8B /* Build configuration list for PBXNativeTarget "CocoaOKHTTPTests" */;
+			buildPhases = (
+				E637A32521776C690053FC8B /* Sources */,
+				E637A32621776C690053FC8B /* Frameworks */,
+				E637A32721776C690053FC8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E637A32B21776C690053FC8B /* PBXTargetDependency */,
+			);
+			name = CocoaOKHTTPTests;
+			productName = CocoaOKHTTPTests;
+			productReference = E637A32921776C690053FC8B /* CocoaOKHTTPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E637A33321776C690053FC8B /* CocoaOKHTTPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E637A34321776C690053FC8B /* Build configuration list for PBXNativeTarget "CocoaOKHTTPUITests" */;
+			buildPhases = (
+				E637A33021776C690053FC8B /* Sources */,
+				E637A33121776C690053FC8B /* Frameworks */,
+				E637A33221776C690053FC8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E637A33621776C690053FC8B /* PBXTargetDependency */,
+			);
+			name = CocoaOKHTTPUITests;
+			productName = CocoaOKHTTPUITests;
+			productReference = E637A33421776C690053FC8B /* CocoaOKHTTPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E637A30921776C680053FC8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Mars;
+				TargetAttributes = {
+					E637A31021776C680053FC8B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					E637A32821776C690053FC8B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E637A31021776C680053FC8B;
+					};
+					E637A33321776C690053FC8B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E637A31021776C680053FC8B;
+					};
+				};
+			};
+			buildConfigurationList = E637A30C21776C680053FC8B /* Build configuration list for PBXProject "CocoaOKHTTP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E637A30821776C680053FC8B;
+			productRefGroup = E637A31221776C680053FC8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E637A31021776C680053FC8B /* CocoaOKHTTP */,
+				E637A32821776C690053FC8B /* CocoaOKHTTPTests */,
+				E637A33321776C690053FC8B /* CocoaOKHTTPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E637A30F21776C680053FC8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E637A32121776C690053FC8B /* LaunchScreen.storyboard in Resources */,
+				E637A31E21776C690053FC8B /* Assets.xcassets in Resources */,
+				E637A31C21776C680053FC8B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E637A32721776C690053FC8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E637A33221776C690053FC8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E637A30D21776C680053FC8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E637A35821776D4D0053FC8B /* OKHTTPDispatcher.m in Sources */,
+				E637A31921776C680053FC8B /* ViewController.m in Sources */,
+				E637A32421776C690053FC8B /* main.m in Sources */,
+				E637A35B21776D630053FC8B /* OKHTTPInterceptor.m in Sources */,
+				E637A34F21776D190053FC8B /* OKHTTPResponse.m in Sources */,
+				E637A34C21776D090053FC8B /* OKHTTPRequest.m in Sources */,
+				E637A35221776D280053FC8B /* OKHTTPCallback.m in Sources */,
+				E637A35521776D390053FC8B /* OKHTTPCall.m in Sources */,
+				E637A34921776CF30053FC8B /* OKHTTPClient.m in Sources */,
+				E637A31621776C680053FC8B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E637A32521776C690053FC8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E637A32E21776C690053FC8B /* CocoaOKHTTPTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E637A33021776C690053FC8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E637A33921776C690053FC8B /* CocoaOKHTTPUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E637A32B21776C690053FC8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E637A31021776C680053FC8B /* CocoaOKHTTP */;
+			targetProxy = E637A32A21776C690053FC8B /* PBXContainerItemProxy */;
+		};
+		E637A33621776C690053FC8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E637A31021776C680053FC8B /* CocoaOKHTTP */;
+			targetProxy = E637A33521776C690053FC8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E637A31A21776C680053FC8B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E637A31B21776C680053FC8B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E637A31F21776C690053FC8B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E637A32021776C690053FC8B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E637A33B21776C690053FC8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E637A33C21776C690053FC8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E637A33E21776C690053FC8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQNCVGRWP6;
+				INFOPLIST_FILE = CocoaOKHTTP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chen.CocoaOKHTTP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E637A33F21776C690053FC8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQNCVGRWP6;
+				INFOPLIST_FILE = CocoaOKHTTP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chen.CocoaOKHTTP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E637A34121776C690053FC8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQNCVGRWP6;
+				INFOPLIST_FILE = CocoaOKHTTPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chen.CocoaOKHTTPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaOKHTTP.app/CocoaOKHTTP";
+			};
+			name = Debug;
+		};
+		E637A34221776C690053FC8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQNCVGRWP6;
+				INFOPLIST_FILE = CocoaOKHTTPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chen.CocoaOKHTTPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaOKHTTP.app/CocoaOKHTTP";
+			};
+			name = Release;
+		};
+		E637A34421776C690053FC8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQNCVGRWP6;
+				INFOPLIST_FILE = CocoaOKHTTPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chen.CocoaOKHTTPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CocoaOKHTTP;
+			};
+			name = Debug;
+		};
+		E637A34521776C690053FC8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQNCVGRWP6;
+				INFOPLIST_FILE = CocoaOKHTTPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chen.CocoaOKHTTPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CocoaOKHTTP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E637A30C21776C680053FC8B /* Build configuration list for PBXProject "CocoaOKHTTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E637A33B21776C690053FC8B /* Debug */,
+				E637A33C21776C690053FC8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E637A33D21776C690053FC8B /* Build configuration list for PBXNativeTarget "CocoaOKHTTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E637A33E21776C690053FC8B /* Debug */,
+				E637A33F21776C690053FC8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E637A34021776C690053FC8B /* Build configuration list for PBXNativeTarget "CocoaOKHTTPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E637A34121776C690053FC8B /* Debug */,
+				E637A34221776C690053FC8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E637A34321776C690053FC8B /* Build configuration list for PBXNativeTarget "CocoaOKHTTPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E637A34421776C690053FC8B /* Debug */,
+				E637A34521776C690053FC8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E637A30921776C680053FC8B /* Project object */;
+}
